@@ -1,0 +1,32 @@
+.container{
+    display: grid;
+    grid-template-columns: minmax(150px, 200px) 1fr minmax(150px, 200px);
+    height: 100vh;
+    grid-template-areas: "header header header"
+                            "nav main aside"
+                            "footer footer footer" ;
+}
+header{
+    background: linear-gradient(30deg, red, green, blue);
+}
+nav{
+    background: linear-gradient(30deg, rgb(200, 255, 0), green, rgb(53, 194, 182));
+
+}
+main{
+    background: linear-gradient(30deg, rgb(100, 45, 102), green, rgb(53, 194, 182));
+}
+aside{
+    background: linear-gradient(30deg, rgb(200, 255, 0),  rgb(223, 121, 26));
+}
+footer{
+    background: linear-gradient(30deg, rgb(214, 21, 47), rgb(53, 194, 182));
+}
+
+header{
+    grid-area: header;
+}
+nav{grid-area: nav;}
+main{grid-area: main;}
+aside{grid-area: aside;}
+footer{grid-area: footer;}
